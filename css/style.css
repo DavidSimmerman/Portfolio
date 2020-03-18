@@ -1,0 +1,115 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0%;
+}
+
+.Main_Info {
+    background-color: rgb(196, 196, 196);
+}
+
+.Content_Box {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 20px;
+}
+
+.Content_Box h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    color: maroon;
+    text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.Content_Box h4 {
+    font-size: 25px;
+}
+
+.Content_Box p {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.Content_Box p a {
+    color: rgb(83, 0, 0);
+}
+
+.Content_Box p a:hover {
+    color: rgb(192, 0, 0);
+}
+
+.Content_Box::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 90%;
+    margin: 40px auto 0px;
+    background: black;
+    box-shadow: 0px 2px 2px 1px rgba(51, 51, 51, 0.541)
+}
+
+.Center {
+    text-align: center;
+}
+
+.Content_Box form {
+    background-color: darkgray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px 4px rgba(51, 51, 51, 0.541)
+}
+
+.Content_Box form table {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.Full_Width input {
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+}
+
+td {
+    padding: 5px;
+}
+
+.Double_Col {
+    column-span: all;
+}
+
+#ab_img {
+    width: 90%;
+    float: right;
+}
+
+#ab_col_1 {
+    width: 70%;
+}
+
+#ab_col_2 {
+    width: 30%;
+}
+
+#gh_col_1 {
+    width: 20%;
+    padding-right: 20px;
+}
+
+#gh_col_2 {
+    width: 80%;
+}
+
+#gh_img {
+    width: 200px;
+    height: 200px;
+}
+

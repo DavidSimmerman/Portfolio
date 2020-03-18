@@ -1,18 +1,22 @@
 <!--
 TODO:
 
+Unordered
 -   Add Footer
 -   Make a better quote
 -   Update Header section
--   Add Links
+-   Different font for - - around headings
 
--   Add CSS file
--   Create CSS style for the content section
+Ordered
+-   Add in Video
 -   Create temp css style for the nav bar
 -   Create footer style
--   Create Sidbar nav
+-   Create Picture container
+-   Create Sidbar nav with icons
 -   Create collapsable sidebar nav (Hover or JS?)
 
+Potential
+-   Add breaks to add room for nav bars
 
 -->
 
@@ -21,34 +25,39 @@ TODO:
     <head>
         <meta charset="UTF-8">
         <title>David Simmerman's Portfolio</title>
-        <!--<link rel="stylesheet" href="">                                                                                                TODO add css-->       
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
+        
+
+        <!--=NAV==================================-->
         <div>
+            <a href="#home">Home</a>                                                                                                    <!-- TODO add logos and side menu  -->
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!---NAV------------------------------------>
 
-            <!--=NAV==================================-->
-            <div>
-                <a href="#">Home</a>                                                                                                    <!-- TODO add logos and side menu  -->
-                <a href="#">About</a>
-                <a href="#">GitHub</a>
-                <a href="#">Contact</a>
-            </div>
-            <!---NAV------------------------------------>
+        <!--=CONTENT==============================-->
+        <!--<br><br>-->                                                                                                                  <!-- Potential breaks for nav bar -->
+        <!--=Home=============================-->
+        <div class="Home_Video" id="home">
+            <!--<iframe src="" frameborder="0"></iframe>-->                                                                                     <!-- TODO Add in video -->
+        </div>
+        <div class="Video_Text">
+            <h1>David Simmerman's Portfolio</h1>
+            <h2><q>You miss 100% of the shots you dont take. - Wayne Gretzky</q><br>-Michael Scott</h2>                               <!-- TODO add a better quote lul xD rofl -->
+        </div>
+        <!---Home------------------------------->
 
-            <!--=Content==============================-->
-            <div class="contnent">
-                <!--=Home=============================-->
-                <div>
-                    <h1>David Simmerman's Portfolio</h1>
-                    <h2>"You miss 100% of the shots you dont take. - Wayne Gretzky"<br>-Michael Scott</h2>                               <!-- TODO add a better quote lul xD rofl -->
-                </div>
-                <!---Home------------------------------->
-
-                <!--=About============================-->
-                <div>
-                    <h3>About</h3>
-                    <p>I am a passionate software developer who has been programming since I was 11 or 12 years old in 2012. 
+        <div class="Main_Info">
+            <!--=About============================-->
+            <div id="about" class="Content_Box">
+                <h3>- About -</h3>
+                <table>
+                    <tr><td id="ab_col_1"><p>I am a passionate software developer who has been programming since I was 11 or 12 years old in 2012. 
                         At the time, I was very into the video game Minecraft, and my friends and I wanted to make a server.
                         We needed someone to program the plugins, so I got to work learning Java. As someone who loves
                         problem solving and puzzels, I quickly fell in love with the concept of coding.<br><br>
@@ -63,44 +72,55 @@ TODO:
                         improve my skills. <br><br>
 
                         I would love to help work on any project with you! If you have any questions, 
-                        <a href="#">Contact</a> me below!                                                                               <!-- TODO add link -->
-                    </p>
-                </div>
-                <!---About------------------------------>
+                        <a href="#contact">contact</a> me below!                                                                               <!-- TODO add link -->
+                    </p></td>
+                    <td id="ab_col_2"><img src="./images/typing.png" alt="" id="ab_img"></td></tr>
+                </table>
+            </div>
+            <!---About------------------------------>
 
-                <!--=GitHub===========================-->
-                <div>
-                    <h3>GitHub</h3>
-                    <p>You can view my GitHub projects here: <br><br> 
+            <!--=GitHub===========================-->
+            <div id="github" class="Content_Box">
+                <h3>- GitHub -</h3>
+                <table>
+                    <tr><td id="gh_col_1"><a href="https://github.com/cfescript"><img src="./images/github_logo.png" alt=" " id="gh_img"></a></td>
+                    <td id="gh_col_2"><p>You can view my GitHub projects here: <br><br> 
                         <a href="https://github.com/cfescript">David's GitHub Profile</a><br><br>
                         I have done several projects in different programming languages. Some of which were self-taught 
                         programs that I created for fun while others were for school.
-                    </p>
-                </div>
-                <!---GitHub----------------------------->
-
-                <!--=Contact==========================-->
-                <div>
-                    <h3>Contact</h3>
-                    <form action="" method="get">
-                        <label>Name:</label>
-                            <input type="text" placeholder="Please enter your name here">
-                        <label>Email:</label>
-                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                        <label>Message:</label>
-                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-                <!---Contact---------------------------->
+                    </p></td></tr>
+                </table>
             </div>
+            <!---GitHub----------------------------->
 
-            <!--=Footer===============================-->
-            <footer>                                                                                                                    <!-- TODO add a footer -->
-
-            </footer>
-            <!---Footer--------------------------------->
+            <!--=Contact==========================-->
+            <div id="contact" class="Content_Box">
+                <h3>- Contact -</h3>
+                <h4 class="Center">Thank you for visiting my portfolio!<br>
+                    If you have any questions, or would like to contact me,<br>
+                    feel free to leave your information and a message below.</h4>
+                <form action="" method="get">
+                    <table>
+                        <tr class="Full_Width"><td><label>Name:</label><br>
+                            <input type="text" placeholder="Please enter your name here"></td>
+                        <td><label>Email:</label><br>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here"></td></tr>
+                        <tr class="Full_Width"><td colspan="2"><label>Message:</label><br>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here"></td></tr>
+                        <tr><td><input type="submit" value="Submit"></td></tr>
+                    </table>
+                </form>
+            </div>
+            <!---Contact---------------------------->
         </div>
+        <!---CONTENT-------------------------------->
+
+        <!--=Footer===============================-->
+        <footer>                                                                                                                    <!-- TODO add a footer -->
+
+        </footer>
+        <!---Footer--------------------------------->
+        
     </body>
 
 </html>
