@@ -258,6 +258,10 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+#gh_photo_overlay:hover {
+    font-family: batout;
+    font-weight: bold;
+}
 
 
 
