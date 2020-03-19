@@ -153,6 +153,7 @@ td {
 
 q {
     font-style: italic;
+    font-size: 90%;
 }
 
 #Code_Video {
@@ -170,8 +171,13 @@ q {
     text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 20px;
     margin: 30px 10% 0 10%;
+    padding: 0px 100px;
     text-align: center;
     font-weight: lighter;
+}
+.Video_Text h2 {
+    margin: 0;
+    padding: 20px 0px;
 }
 
 .Temp_Nav {
