@@ -5,6 +5,7 @@ body {
 
 .Main_Info {
     background-color: rgb(196, 196, 196);
+    margin: 0px 10% 0px 10%;
 }
 
 .Content_Box {
@@ -119,9 +120,9 @@ q {
 
 #Code_Video {
     position: fixed;
-	right: 0;
-	top: 0; 
-	min-width: 100%; 
+    top: 0; 
+    min-width: 100%;;
+	min-height: 100%; 
 	z-index: -1;
     filter: invert(10%) grayscale(100%);
 }
@@ -130,9 +131,8 @@ q {
     background: rgba(0, 0, 0, 0.5);
     color: maroon;
     text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
-    width: 100%;
     padding: 20px;
-    margin-top: 23%;
+    margin: 30px 10% 0 10%;
     text-align: center;
 }
 
