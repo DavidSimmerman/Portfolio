@@ -4,18 +4,15 @@ TODO:
 Unordered
 -   Add Footer
 -   Make a better quote
--   Different font for - - around headings
--   Choose a different font
 
 Ordered
--   Finish home section style/content  (Fix Michael Scott spacing)
 -   Create footer style
 -   Create Picture container
--   Create Sidbar nav with icons
--   Create collapsable sidebar nav (Hover or JS?)
+-   Add more info and sections
 
 Potential
--   Add breaks to add room for nav bars
+-   Make mobile version
+-   Update footer if JavaScript is added in
 
 -->
 
@@ -32,28 +29,27 @@ Potential
 
         <!--=NAV==================================-->
         <div class="Temp_Nav">
-            <a href="#home">Home</a>                                                                                                    <!-- TODO add logos and side menu  -->
-            <a href="#about">About</a>
-            <a href="#github">GitHub</a>
+            <a href="#home">Home</a><span class="Nav_Divider"></span>
+            <a href="#about">About</a><span class="Nav_Divider"></span> 
+            <a href="#github">GitHub</a><span class="Nav_Divider"></span> 
             <a href="#contact">Contact</a>
             <p>David's Portfolio</p>
         </div>
         <!---NAV------------------------------------>
 
         <!--=CONTENT==============================-->
-        <!--<br><br>-->                                                                                                                  <!-- Potential breaks for nav bar -->
         <!--=Home=============================-->
         <div class="Home_Video" id="home">
             <video autoplay muted loop id="Code_Video"> 
                 <source src="./video/code_rain.mp4" type="video/mp4">
                 Your browser does not support HTML5 video. 
-            </video>                                                                                     <!-- TODO Add in video -->
+            </video>
         </div>
         <div class="Video_Text">
             <h1><br>Welcome!</h1>
-            <h2><q>You miss 100% of the shots you dont take. - Wayne Gretzky</q><br>-Michael Scott</h2>                               <!-- TODO add a better quote lul xD rofl -->
+            <h2><q>You miss 100% of the shots you dont take. - Wayne Gretzky</q><br>-Michael Scott</h2>
             <h2>Hello, my name is David and this is my portfolio website. It contains info about my skills and experience. <br><br>
-            Thank you for stopping by and feel free to contact me below!<br><br></h2>
+            Thank you for stopping by and feel free to visit the contact section to leave me a message!<br><br></h2>
         </div>
         <!---Home------------------------------->
 
@@ -61,26 +57,23 @@ Potential
             <!--=About============================-->
             <div id="about" class="Content_Box">
                 <h3>- About -</h3>
-                <table>
-                    <tr><td id="ab_col_1"><p>I am a passionate software developer who has been programming since I was 11 or 12 years old in 2012. 
-                        At the time, I was very into the video game Minecraft, and my friends and I wanted to make a server.
-                        We needed someone to program the plugins, so I got to work learning Java. As someone who loves
-                        problem solving and puzzels, I quickly fell in love with the concept of coding.<br><br>
+                <p class="Justify">I am a passionate software developer who has been programming since I was 11 or 12 years old in 2012. 
+                    At the time, I was very into the video game Minecraft, and my friends and I wanted to make a server.
+                    We needed someone to program the plugins, so I got to work learning Java. As someone who loves
+                    problem solving and puzzels, I quickly fell in love with the concept of coding.<br><br>
 
-                        Over the next few years, I started to learn new programming languages on my own through YouTube,
-                        Udemy, and any other resources I could find. I worked with HTML, CSS, Java, C++, and Python.
-                        Unfortunately, I struggled to stay consistent with coding since I was busy with school and other
-                        extracurricular activities.<br><br>
+                    Over the next few years, I started to learn new programming languages on my own through YouTube,
+                    Udemy, and any other resources I could find. I worked with HTML, CSS, Java, C++, and Python.
+                    Unfortunately, I struggled to stay consistent with coding since I was busy with school and other
+                    extracurricular activities.<br><br>
 
-                        I am currently enrolled in <a href="https://www.learncodinganywhere.com/">The Tech Academy</a> 
-                        where I am learning to be a Software Developer. I am constantly working to learn more and 
-                        improve my skills. <br><br>
+                    I am currently enrolled in <a href="https://www.learncodinganywhere.com/">The Tech Academy</a> 
+                    where I am learning to be a Software Developer. I am constantly working to learn more and 
+                    improve my skills. <br><br>
 
-                        I would love to help work on any project with you! If you have any questions, 
-                        <a href="#contact">contact</a> me below!                                                                               <!-- TODO add link -->
-                    </p></td>
-                    <td id="ab_col_2"><img src="./images/typing.png" alt="" id="ab_img"></td></tr>
-                </table>
+                </p> 
+                <p class="Center"><span class="BatFont"> - </span>I would love to help work on any project with you! If you have any questions, 
+                    <a href="#contact">contact</a> me below!<span class="BatFont"> - </span></p>
             </div>
             <!---About------------------------------>
 
@@ -121,8 +114,8 @@ Potential
         <!---CONTENT-------------------------------->
 
         <!--=Footer===============================-->
-        <footer>                                                                                                                    <!-- TODO add a footer -->
-
+        <footer>
+            <p>Website designed and programmed by David Simmerman using HTML and CSS</p> <!-- Update if using JavaScript -->
         </footer>
         <!---Footer--------------------------------->
         
