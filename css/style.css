@@ -1,5 +1,20 @@
+@font-face {
+    src: url(../fonts/batmfa__.ttf);
+    font-family: batsol;
+}
+
+@font-face {
+    src: url(../fonts/batmfo__.ttf);
+    font-family: batout;
+}
+
+@font-face {
+    src: url(../fonts/Bebas-Regular.ttf);
+    font-family: bebas;
+}
+
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: bebas;
     margin: 0%;
 }
 
@@ -9,28 +24,30 @@ body {
 }
 
 .Content_Box {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 170px;
+    padding-right: 170px;
     padding-bottom: 30px;
     padding-top: 30px;
     margin: 0px;
 }
 
 .Content_Box h3 {
+    font-family: batsol;
+    font-weight: 100;
     margin: 0 auto;
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     color: maroon;
     text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .Content_Box h4 {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .Content_Box p {
     text-align: justify;
-    font-size: 15px;
+    font-size: 23px;
 }
 
 .Content_Box p a {
@@ -70,13 +87,13 @@ body {
 }
 
 label {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .Full_Width input {
     width: 100%;
-    height: 15px;
-    font-size: 13px;
+    height: 20px;
+    font-size: 18px;
 }
 
 td {
@@ -128,12 +145,13 @@ q {
 }
 
 .Video_Text {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     color: maroon;
     text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 20px;
     margin: 30px 10% 0 10%;
     text-align: center;
+    font-weight: lighter;
 }
 
 .Temp_Nav {
@@ -148,6 +166,7 @@ q {
 }
 
 .Temp_Nav a {
+    font-family: batsol;
     color: gray;
     font-size: 30px;
     margin: auto;
@@ -159,5 +178,17 @@ q {
 
 .Temp_Nav a:hover {
     border-bottom: 2px solid maroon;
+    font-family: batout;
+}
+
+.Temp_Nav p {
+    font-family: batout;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    float: left;
+    color: maroon;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 22px;
 }
