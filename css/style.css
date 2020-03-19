@@ -8,28 +8,28 @@ body {
 }
 
 .Content_Box {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 0px;
 }
 
 .Content_Box h3 {
     margin: 0 auto;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     color: maroon;
     text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .Content_Box h4 {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .Content_Box p {
     text-align: justify;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .Content_Box p a {
@@ -69,13 +69,13 @@ body {
 }
 
 label {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .Full_Width input {
     width: 100%;
-    height: 20px;
-    font-size: 15px;
+    height: 15px;
+    font-size: 13px;
 }
 
 td {
@@ -113,3 +113,23 @@ td {
     height: 200px;
 }
 
+q {
+    font-style: italic;
+}
+
+#Code_Video {
+    position: fixed;
+    min-width: 100%;
+    z-index: -1;
+    filter: invert(10%) grayscale(100%);
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: maroon;
+    text-shadow: -1px 0px black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23%;
+    text-align: center;
+}
