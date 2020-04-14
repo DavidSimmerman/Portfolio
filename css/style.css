@@ -13,9 +13,20 @@
     font-family: bebas;
 }
 
+html {
+    background-color: black;
+}
+
 body {
     font-family: bebas;
     margin: 0%;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 .Main_Info {
