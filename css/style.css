@@ -87,50 +87,88 @@ body.fade-out {
     text-align: justify;
 }
 
-.Content_Box form {
-    background-color: darkgray;
-    padding: 10px;
-    border-radius: 5px;
-    width: 70%;
-    margin: 0 auto;
-    box-shadow: 0px 2px 4px 4px rgba(51, 51, 51, 0.541)
+@keyframes movePopup{
+    form {right: -40vw;}
+    to {bottom: 1.75vw;}
 }
 
-.Content_Box form table {
-    width: 100%;
-    padding: 10px;
-}
-
-label {
-    font-size: 20px;
-}
-
-.Full_Width input {
-    width: 100%;
-    height: 20px;
-    font-size: 18px;
-    border: 3px inset rgb(219, 219, 219);
-}
-
-#Submit {
-    text-align: center;
-}
-
-#Submit input {
-    height: 25px;
-    width: 50%;
-    font-family: bebas;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 0;
-    border: 1px solid gray;
-}
-
-#Submit input:hover {
+.Pop_Up_Button {
+    bottom: 1.75vw;
+    right: 1.75vw;
+    width: 25vw;
+    background-color: white;
+    color: black;
+    border: solid;
     cursor: pointer;
-    background-color: gray;
-    border: 1px solid rgb(97, 97, 97);
-    color: maroon;
+    position: fixed;
+    -webkit-animation: movePopup 5s;
+    animation: movePopup 5s;
+}
+
+.form-popup {
+    border: 3px solid #f0f1f0;
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+}
+
+.form-container {
+    max-width: 49vw;
+    padding: 9px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    border: none;
+    background: gainsboro;
+    font-size: 1vw;
+}
+
+.form-container .btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-bottom: 1vh;
+}
+
+.form-container .cancel {
+    background-color: black;
+    color: white;
+    border-color: gray;
+}
+
+button {
+    letter-spacing: 0.3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw 1.5vw;
+    border-style: solid;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+button:hover, .form-container .btn:hover {
+    color: white;
+    background-color: black;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: silver;
+}
+
+.form-container .cancel:hover {
+    color: white;
+    background-color: darkred;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: black;
 }
 
 td {
@@ -217,6 +255,7 @@ q {
 .Temp_Nav a:hover {
     border-bottom: 2px solid maroon;
     font-family: batout;
+    cursor: pointer;
 }
 
 .Temp_Nav p {
