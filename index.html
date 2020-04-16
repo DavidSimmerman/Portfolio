@@ -45,6 +45,55 @@
             <!--=About============================-->
             <div id="about" class="Content_Box">
                 <h3>- About -</h3>
+
+                <div id="Slideshow_Container">
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1 / 3</div>
+                        <img src="images/me.png" class="Slide_Show_Images" style="width:100%;">
+                        <div class="text">Slide 1</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2 / 3</div>
+                        <img src="images/me.png" class="Slide_Show_Images" style="width:100%;">
+                        <div class="text">Slide 2</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 3</div>
+                        <img src="images/me.png" class="Slide_Show_Images" style="width:100%;">
+                        <div class="text">Slide 3</div>
+                    </div>
+
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <div style="text-align:center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    function plusSlides(n){ showSlides(slideIndex += n); }
+                    function currentSlide(n) { showSlides(slideIndex = n); }
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) { slideIndex = 1; }
+                        if (n < 1) { slideIndex = slides.length; }
+                        for (i=0; i<slides.length; i++) { slides[i].style.display = "none"; }
+                        for (i=0; i<dots.length; i++) { dots[i].className = dots[i].className.replace(" active", ""); }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                    }
+                </script>
+
                 <p class="Justify">I am a passionate software developer who has been programming since I was 11 or 12 years old in 2012. 
                     At the time, I was very into the video game Minecraft, and my friends and I wanted to make a server.
                     We needed someone to program the plugins, so I got to work learning Java. As someone who loves
