@@ -138,7 +138,7 @@ body.fade-out {
 }
 
 .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
+    width: 94%;
     height: .5vw;
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
