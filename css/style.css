@@ -286,7 +286,6 @@ button:hover, .form-container .btn:hover {
     background-color: black;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
-    border-style: solid;
     border-color: silver;
 }
 
@@ -362,7 +361,7 @@ q {
 	position: fixed; 
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 99;
     text-align: center;
     border-bottom: 2px solid maroon;
 }
