@@ -97,7 +97,7 @@ body.fade-out {
     right: 11.75vw;
     width: 18vh;
     height: 7vh;
-    font-size: 2.5vh;
+    font-size: 160%;
     background-color: darkgray;
     color: maroon;
     border: 2px solid maroon;
