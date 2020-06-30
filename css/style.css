@@ -57,7 +57,7 @@ body.fade-out {
     font-size: 2vw;
 }
 
-.Content_Box p {
+.Content_Box p, li{
     font-size: 1.3vw;
 }
 
